@@ -1,0 +1,16 @@
+body {
+  background-color: #eee;
+}
+.container {
+  width: 700px;
+}
+.editInfo{
+  margin-left: 30px;
+}
+span.button {
+  display: block;
+  margin-bottom: 10px;
+}
+button {
+  margin-top: 10px;
+}

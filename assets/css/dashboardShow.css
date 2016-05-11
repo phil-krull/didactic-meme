@@ -1,0 +1,14 @@
+body {
+  background-color: #eee;
+}
+.container {
+  width: 700px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.addUser {
+  margin: 10px 0px;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: lightgray;
+}

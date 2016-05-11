@@ -1,0 +1,30 @@
+body {
+  background-color: #eee;
+}
+.container {
+  width: 700px;
+}
+.messages, .posts {
+  border-bottom: 3px solid black;
+}
+.posts {
+  margin: 10px 0px 10px 0px;
+}
+p.right, p.left {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+}
+p.right {
+  float: right;
+}
+span {
+  color: red;
+}
+span.button {
+  display: block;
+  margin-bottom: 10px;
+}
+button {
+  margin-top: 10px;
+}

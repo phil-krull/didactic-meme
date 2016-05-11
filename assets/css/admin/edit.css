@@ -1,0 +1,22 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+.container{
+  width: 700px;
+}
+.leftContent, .rightContent{
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 10px;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+button {
+  margin-top: 10px;
+}

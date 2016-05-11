@@ -1,0 +1,19 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+.main {
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+}
+.info {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-right: 10px;
+}
