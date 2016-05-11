@@ -15,6 +15,9 @@
     <button class="btn btn-primary btn-sm" type="submit">Logout</button>
   </form>
   <div class="container">
+    <?php if ($this->session->flashdata('errors')) { ?>
+      <span><?= $this->session->flashdata('errors') ?></span>
+    <?php } ?>
     <div class="mainContent">
     <h2>Edit Profile</h2>
       <div class="leftContent">
@@ -59,9 +62,6 @@
         </form>
       </div><!-- end of rightContent -->
     </div><!-- end of main content -->
-    <? if ($this->session->flashdata('errors')) { ?>
-      <?= $this->session->flashdata('errors') ?>
-    <? } ?>
   </div><!-- end of container -->
 </body>
 </html>

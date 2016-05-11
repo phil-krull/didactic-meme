@@ -18,9 +18,9 @@
       <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password">
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
       <p>
-        <? if ($this->session->flashdata('errors')) { ?>
+        <?php if ($this->session->flashdata('errors')) { ?>
           <?= $this->session->flashdata('errors') ?>
-        <? } ?>
+        <?php } ?>
       </p>
       <a href="/register">Don't have an account? Register</a>
     </form>

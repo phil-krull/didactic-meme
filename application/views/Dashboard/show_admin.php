@@ -11,6 +11,9 @@
     <button class="btn btn-primary btn-sm" type="submit">Logout</button>
   </form>
   <div class="container">
+    <?php if ($this->session->flashdata('errors')) { ?>
+      <span><?= $this->session->flashdata('errors') ?></span>
+    <?php } ?>
     <h2>Manage Users</h2>
     <table class="table table-striped">
       <tr>
@@ -35,9 +38,6 @@
       <?php } ?>
     </table>
     <a class="addUser" href="/users/new">Add new User</a>
-    <? if ($this->session->flashdata('errors')) { ?>
-      <?= $this->session->flashdata('errors') ?>
-    <? } ?>
   </div><!-- end of container -->
 </body>
 </html>

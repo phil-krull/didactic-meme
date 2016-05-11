@@ -8,6 +8,9 @@
 </head>
 <body>
   <div class="container">
+    <?php if ($this->session->flashdata('errors')) { ?>
+      <span><?= $this->session->flashdata('errors') ?></span>
+    <?php } ?>
     <form action="/sessions/destroy" method="post">
       <button class="btn btn-primary btn-sm" type="submit">Logout</button>
     </form>
@@ -31,9 +34,6 @@
       </tr>
      <?php } ?>
     </table>
-    <? if ($this->session->flashdata('errors')) { ?>
-      <?= $this->session->flashdata('errors') ?>
-    <? } ?>
   </div><!-- end of container -->
 </body>
 </html>

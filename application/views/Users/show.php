@@ -14,9 +14,9 @@
     <button class="btn btn-primary btn-sm" type="submit">Logout</button>
   </form>
   <div class="container">
-    <? if ($this->session->flashdata('errors')) { ?>
-        <span><?= $this->session->flashdata('errors') ?></span>
-      <? } ?>
+    <?if ($this->session->flashdata('errors')) { ?>
+      <span><?= $this->session->flashdata('errors') ?></span>
+    <? } ?>
     <h3><?= $user['first_name'] ?> <?= $user['last_name'] ?></h3>
     <table class="table">
       <tr>
