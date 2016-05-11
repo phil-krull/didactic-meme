@@ -12,7 +12,7 @@
   <a href="/dashboard">Return to Dashboard</a>
   <div class="container">
     <?php if ($this->session->flashdata('errors')) { ?>
-      <span><?= $this->session->flashdata('errors') ?></span>
+      <p><span><?= $this->session->flashdata('errors') ?></span></p>
     <?php } ?>
     <form class="form-signin" action="/users" method="post">
       <h2 class="form-signin-heading">Add a new user</h2>

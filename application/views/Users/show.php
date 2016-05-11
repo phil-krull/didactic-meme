@@ -15,7 +15,7 @@
   </form>
   <div class="container">
     <?if ($this->session->flashdata('errors')) { ?>
-      <span><?= $this->session->flashdata('errors') ?></span>
+      <p><span><?= $this->session->flashdata('errors') ?></span></p>
     <? } ?>
     <h3><?= $user['first_name'] ?> <?= $user['last_name'] ?></h3>
     <table class="table">

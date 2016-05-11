@@ -16,7 +16,7 @@
   </form>
   <div class="container">
     <?php if ($this->session->flashdata('errors')) { ?>
-      <span><?= $this->session->flashdata('errors') ?></span>
+      <p><span><?= $this->session->flashdata('errors') ?></span></p>
     <?php } ?>
     <div class="mainContent">
     <h2>Edit Profile</h2>

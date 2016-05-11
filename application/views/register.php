@@ -25,7 +25,7 @@
       <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
       <a href="/login">Already have an account? Login</a>
       <?php if ($this->session->flashdata('errors')) { ?>
-        <span><?= $this->session->flashdata('errors') ?></span>
+        <p><span><?= $this->session->flashdata('errors') ?></span></p>
       <?php } ?>
     </form>
   </div><!-- end of container -->
