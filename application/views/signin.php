@@ -17,11 +17,9 @@
       <label for="inputPassword" class="sr-only">Password:</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password">
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-      <p>
         <?php if ($this->session->flashdata('errors')) { ?>
-          <?= $this->session->flashdata('errors') ?>
+          <span><?= $this->session->flashdata('errors') ?></span>
         <?php } ?>
-      </p>
       <a href="/register">Don't have an account? Register</a>
     </form>
   </div><!-- end of container -->

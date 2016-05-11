@@ -10,9 +10,6 @@
 </head>
 <body>
   <div class="container">
-    <?php if ($this->session->flashdata('errors')) { ?>
-      <span><?= $this->session->flashdata('errors') ?></span>
-    <?php } ?>
     <form class="form-signin" action="/users" method="post">
       <h2 class="form-signin-heading">Register</h2>
       <label for="inputFirstName" class="sr-only">First Name:</label>
@@ -27,6 +24,9 @@
       <input type="password" id="inputPasswordConfirmation" class="form-control" placeholder="Confirm Password" name="password_confirmation">
       <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
       <a href="/login">Already have an account? Login</a>
+      <?php if ($this->session->flashdata('errors')) { ?>
+        <span><?= $this->session->flashdata('errors') ?></span>
+      <?php } ?>
     </form>
   </div><!-- end of container -->
 </body>
