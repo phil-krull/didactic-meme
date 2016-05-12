@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <?php if ($this->session->flashdata('errors')) { ?>
-      <p><span><?= $this->session->flashdata('errors') ?></span></p>
+      <span><?= $this->session->flashdata('errors') ?></span>
     <?php } ?>
     <form action="/sessions/destroy" method="post">
       <button class="btn btn-primary btn-sm" type="submit">Logout</button>

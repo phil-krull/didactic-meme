@@ -12,7 +12,7 @@
   </form>
   <div class="container">
     <?php if ($this->session->flashdata('errors')) { ?>
-      <p><span><?= $this->session->flashdata('errors') ?></span></p>
+      <span><?= $this->session->flashdata('errors') ?></span>
     <?php } ?>
     <h2>Manage Users</h2>
     <table class="table table-striped">
